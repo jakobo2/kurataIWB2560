@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - IWB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>IWB Services</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="tools.html">Software Tools</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+    
+            <div class="service">
+                <img src="images.png" alt="Electronic Recycling">
+                <h3>Electronic Recycling</h3>
+                <p>We specialize in the safe and eco-friendly recycling of electronic components, including RAM, hard drives, and motherboards.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+    
+            <div class="service">
+                <img src="Data Recovery Tool With Coupon Code 10%OFF _ BLROFF10.jfif" alt="Data Recovery">
+                <h3>Data Recovery</h3>
+                <p>Lost important files? Our expert data recovery service helps restore data from damaged or faulty storage devices.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+    
+            <div class="service">
+                <img src="computer-parts.jpg" alt="Hardware Repair">
+                <h3>Hardware Repair</h3>
+                <p>We offer professional repairs and maintenance for electronic devices, ensuring they function optimally and last longer.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+    
+            <div class="service">
+                <img src="Cybersecurity-solutions.jpeg" alt="Cybersecurity Solutions">
+                <h3>Cybersecurity Solutions</h3>
+                <p>Protect your business with our advanced cybersecurity services, including firewall setup and malware removal.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="service">
+                <img src="cyberservices.jfif" alt="Cybersecurity Services">
+                <h3>Cybersecurity Services</h3>
+                <p>We provide security solutions, including firewall installation, malware protection, and penetration testing, to safeguard your digital assets.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+    
+            <div class="service">
+                <img src="softwaredev.jfif" alt="Software Development">
+                <h3>Software Development</h3>
+                <p>Our team develops custom software solutions, mobile apps, and web applications tailored to your business needs.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+    
+        </div>
+    </section>
+    
+    <section id="pricing">
+        <h2>Our Pricing</h2>
+        <div class="pricing-container">
+    
+            <div class="pricing-plan">
+                <h3>Basic</h3>
+                <p>Ideal for personal needs</p>
+                <h4>M100.00</h4>
+                <ul>
+                    <li>Basic computer repair</li>
+                    <li>Data recovery (up to 50GB)</li>
+                    <li>Email support</li>
+                </ul>
+                <a href="#" class="btn">Choose Plan</a>
+            </div>
+    
+            <div class="pricing-plan">
+                <h3>Standard</h3>
+                <p>Best for small businesses</p>
+                <h4>M150.00</h4>
+                <ul>
+                    <li>Advanced data recovery</li>
+                    <li>Cybersecurity check</li>
+                    <li>Priority support</li>
+                </ul>
+                <a href="#" class="btn">Choose Plan</a>
+            </div>
+    
+            <div class="pricing-plan">
+                <h3>Premium</h3>
+                <p>For businesses & professionals</p>
+                <h4>M300.00</h4>
+                <ul>
+                    <li>Full IT support</li>
+                    <li>24/7 monitoring</li>
+                    <li>Dedicated technician</li>
+                </ul>
+                <a href="#" class="btn">Choose Plan</a>
+            </div>
+    
+        </div>
+    </section>
+    <section id="service-inquiry">
+        <h2>Request a Service</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Describe your service request"></textarea>
+            <button type="submit" class="btn">Submit Request</button>
+        </form>
+    </section>
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>What is electronic recycling?</h3>
+                <p class="faq-answer">Electronic recycling is the process of safely disposing of electronic waste by reusing or dismantling components.</p>
+            </div>
+    
+            <div class="faq-item">
+                <h3>Do you recover data from damaged hard drives?</h3>
+                <p class="faq-answer">Yes, we specialize in retrieving data from corrupted or physically damaged storage devices.</p>
+            </div>
+    
+            <div class="faq-item">
+                <h3>How long does a repair take?</h3>
+                <p class="faq-answer">Repair times vary depending on the issue. Most repairs are completed within 24-48 hours.</p>
+            </div>
+    
+            <div class="faq-item">
+                <h3>Do you offer cybersecurity services?</h3>
+                <p class="faq-answer">Yes, we provide cybersecurity solutions, including firewall setup, malware removal, and security audits.</p>
+            </div>
+        </div>
+    
+        <button class="btn" id="toggleFaq">Read More</button>
+    </section>
+
+    <section id="cta">
+        <h2>Need Help? Contact Us Now!</h2>
+        <p>Our experts are ready to assist you with any technical issues.</p>
+        <a href="contact.html" class="btn">Get in Touch</a>
+    </section>
+    
+    <script>
+        document.getElementById("toggleFaq").addEventListener("click", function() {
+            let faqContainer = document.querySelector(".faq-container");
+            let answers = document.querySelectorAll(".faq-answer");
+    
+            if (faqContainer.style.maxHeight === "100px" || faqContainer.style.maxHeight === "") {
+                faqContainer.style.maxHeight = "1000px"; // Expand to show all FAQs
+                answers.forEach(answer => answer.style.display = "block");
+                this.textContent = "Read Less";
+            } else {
+                faqContainer.style.maxHeight = "100px"; // Collapse back
+                answers.forEach(answer => answer.style.display = "none");
+                this.textContent = "Read More";
+            }
+        });
+    </script>
+        
+        
+    
+    
+    
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <h2>About IWB</h2>
+                    <p>IWB is a leader in electronic recycling, specializing in RAM, Hard Drives, and motherboard components. We provide sustainable solutions for e-waste management.</p>
+                </div>
+        
+                <div class="footer-section contact">
+                    <h2>Contact Us</h2>
+                    <p><strong>Email:</strong> info@iwb.com.ls</p>
+                    <p><strong>Phone:</strong> +266 590 4567</p>
+                    <p><strong>Address:</strong> Maseru, Lesotho</p>
+                </div>
+        
+                <div class="footer-section social">
+                    <h2>Follow Us</h2>
+                    <a href="https://facebook.com/iwb" target="_blank"><img src="download.png" alt="Facebook"></a>
+                    <a href="https://twitter.com/iwb" target="_blank"><img src="X Social Media Round icon PNG and SVG Vector Free Download.jfif" alt="Twitter"></a>
+                    <a href="https://instagram.com/iwb" target="_blank"><img src="insta.jfif" alt="Instagram"></a>
+                    <a href="https://linkedin.com/company/iwb" target="_blank"><img src="download (2).png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <p class="footer-bottom">&copy; 2025 IWB - All Rights Reserved.</p>
+        </footer>
+    
+
+</body>
+</html>

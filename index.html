@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IWB - Electronic Recycling</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>IWB - Electronic Recycling</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="tools.html">Software Tools</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="banner">
+        <h2>Introducing 4 New Data Recovery & Destruction Tools!</h2>
+        <p>Get secure and efficient data management tools today.</p>
+        <a href="tools.html" class="btn">Learn More</a>
+    </section>
+    
+    <section id="about">
+        <h2>About IWB</h2>
+        <p class="aboutparagraph">IWB is a leader in electronic recycling, specializing in RAM, Hard Drives, and Motherboard components.
+            It is a Lesotho-based company that operates under the supervision of Co-Founder Kenneth. 
+            The company started in 2024 with a capital of M100,000. During his journey in sourcing 
+            funds, Kenneth partnered with Shadrack, who joined as the second CEO of the company. 
+            The mandate of IWB is to recycle computer parts; mainly RAM, Hard Drives, and 
+            components of a motherboard. In 2025, the company penetrated the market and became 
+            one of the pioneers of electronic recycling in the Southern Region of Africa. The growth 
+            of IWB attracted investors, partners, and clients outside of Lesotho.</p>
+      </section> 
+
+    <section class="image-gallery">
+        <img src="motherboard.jpg" alt="Recycling Process">
+        <img src="computer-parts.jpg" alt="Recycling Process">
+        <img src="harddrive-fix.jpg" alt="Recycling Process">
+    </section>
+    
+    <section id="features">
+        <h2>Why Choose IWB?</h2>  
+           <div class="slide">
+                <video controls>
+                    <source src="innovation.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Committed to innovation and sustainability</p>
+            </div>
+        <div id="features-slider">
+            <div class="slide active">
+                <img src="WEEE WASTE RECYCLING & WEEE Compliance _ VDR Resale.jfif" alt="Eco-Friendly Recycling">
+                <p>Eco-friendly electronic recycling solutions</p>
+            </div>
+            <div class="slide">
+                <img src="Certified Secure Data Destruction of Hard Drives.jfif" alt="Data Security">
+                <p>Industry-leading data recovery and destruction tools</p>
+            </div>
+            <div class="slide">
+                <img src="Empowering Businesses with Reliable Backup Solutions_ A Look at Leading Providers.jfif" alt="Trusted by Clients">
+                <p>Trusted by international investors and clients</p>
+            </div>
+
+        </div>
+        <div class="slider-nav">
+            <button onclick="prevSlide()">&#10094; Prev</button>
+            <button onclick="nextSlide()">Next &#10095;</button>
+        </div>
+    </section>
+    
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <blockquote>
+            "IWB has transformed how we handle electronic waste. Their data destruction tools are top-notch!" - Karabo H.
+        </blockquote>
+        <blockquote>
+            "Reliable, innovative, and eco-friendly. IWB is a game-changer in the industry!" - Sarah M.
+        </blockquote>
+    </section>
+    
+    <section id="cta">
+        <h2>Join Our Mission</h2>
+        <p>Be part of the electronic recycling revolution. Contact us today to learn more about our services.</p>
+        <a href="contacts.html" class="btn">Get in Touch</a>
+    </section>
+    
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <h2>About IWB</h2>
+                    <p>IWB is a leader in electronic recycling, specializing in RAM, Hard Drives, and motherboard components. We provide sustainable solutions for e-waste management.</p>
+                </div>
+        
+                <div class="footer-section contact">
+                    <h2>Contact Us</h2>
+                    <p><strong>Email:</strong> info@iwb.com.ls</p>
+                    <p><strong>Phone:</strong> +266 590 4567</p>
+                    <p><strong>Address:</strong> Maseru, Lesotho</p>
+                </div>
+        
+                <div class="footer-section social">
+                    <h2>Follow Us</h2>
+                    <a href="https://facebook.com/iwb" target="_blank"><img src="download.png" alt="Facebook"></a>
+                    <a href="https://twitter.com/iwb" target="_blank"><img src="X Social Media Round icon PNG and SVG Vector Free Download.jfif" alt="Twitter"></a>
+                    <a href="https://instagram.com/iwb" target="_blank"><img src="insta.jfif" alt="Instagram"></a>
+                    <a href="https://linkedin.com/company/iwb" target="_blank"><img src="download (2).png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <p class="footer-bottom">&copy; 2025 IWB - All Rights Reserved.</p>
+        </footer>
+    
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Initialize the slider
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - IWB Electronic Recycling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>IWB - Electronic Recycling</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="tools.html">Software Tools</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <p>Have any questions or want to learn more about our services? Get in touch with us!</p>
+            
+            <div class="contact-details">
+                <div class="detail">
+                    <i class="fas fa-envelope"></i> <!-- Email Icon -->
+                    <h3>Email Us</h3>
+                    <p>For inquiries, email us at: <a href="mailto:info@iwb.com">info@iwb.com</a></p>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-phone"></i> <!-- Phone Icon -->
+                    <h3>Call Us</h3>
+                    <p>Reach us by phone at: <a href="tel:+26612345678">+266 590 4567</a></p>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-map-marker-alt"></i> <!-- Location Icon -->
+                    <h3>Visit Us</h3>
+                    <p>Come to our office at: <br> IWB Headquarters, Maseru, Lesotho</p>
+                </div>
+            </div>
+        </section>
+
+
+    <section id="contact-form">
+        <h2>Send Us a Message</h2>
+        <p>We would love to hear from you. Please fill out the form below:</p>
+        
+        <form action="submit_form.php" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+    <div class="office-hours">
+        <h3>Our Office Hours</h3>
+        <ul>
+            <li>Monday - Friday: 9 AM - 6 PM</li>
+            <li>Saturday: 10 AM - 4 PM</li>
+            <li>Sunday: Closed</li>
+        </ul>
+    </div>
+    
+    <div class="feedback-form">
+        <h3>We Value Your Feedback</h3>
+        <form action="submit_feedback.php" method="post">
+            
+            <label>Rate Us:</label>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+            </div>
+    
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Write your experience here..." required></textarea>
+    
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+    
+    
+
+    <section id="social-media">
+        <h2>Follow Us</h2>
+        <p>Stay updated with our latest news and services:</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    <script>
+        function initMap() {
+            var location = {lat: -37.816279, lng: 144.953736};  // Your coordinates
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: 'Our Office'
+            });
+        }
+    </script>
+
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/your_tawk_id/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            if (name == "" || email == "") {
+                alert("Name and Email are required.");
+                return false;
+            }
+        }
+    </script>
+
+    <form onsubmit="return validateForm()">
+        <!-- Your form fields here -->
+    </form>
+    <button id="back-to-top">Back to Top</button>
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About IWB</h2>
+                <p>IWB is a leader in electronic recycling, specializing in RAM, Hard Drives, and motherboard components. We provide sustainable solutions for e-waste management.</p>
+            </div>
+    
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p><strong>Email:</strong> info@iwb.com.ls</p>
+                <p><strong>Phone:</strong> +266 590 4567</p>
+                <p><strong>Address:</strong> Maseru, Lesotho</p>
+            </div>
+    
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <a href="https://facebook.com/iwb" target="_blank"><img src="download.png" alt="Facebook"></a>
+                <a href="https://twitter.com/iwb" target="_blank"><img src="X Social Media Round icon PNG and SVG Vector Free Download.jfif" alt="Twitter"></a>
+                <a href="https://instagram.com/iwb" target="_blank"><img src="insta.jfif" alt="Instagram"></a>
+                <a href="https://linkedin.com/company/iwb" target="_blank"><img src="download (2).png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 IWB - All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
